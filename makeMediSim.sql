@@ -69,3 +69,9 @@ CREATE TABLE drugs (
     description_en NVARCHAR(MAX), -- English description
     image NVARCHAR(255) -- Assuming storing image path or URL
 );
+
+CREATE TABLE email_otp (
+    email NVARCHAR(255) NOT NULL,
+    otp NVARCHAR(6) NOT NULL, -- Assuming OTP is a 6-character string
+    CONSTRAINT PK_email_otp PRIMARY KEY (email)
+);
