@@ -4,6 +4,7 @@
     {
         List<T> GetAll();
 
-        T GetById(int id);
+        // object for find by id or name
+        T GetOne(object obj);
     }
 }

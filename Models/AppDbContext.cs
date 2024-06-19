@@ -15,7 +15,7 @@ namespace Test.Models
             modelBuilder.Entity<Chronic_disease>().ToTable("chronic_diseases");
             modelBuilder.Entity<UserChronicDisease>().ToTable("user_chronic_diseases").HasKey("user_id", "disease_id");
             modelBuilder.Entity<Email_OTP>().ToTable("email_otp").HasKey("Email");
-
+            modelBuilder.Entity<Drug>().ToTable("drugs");
         }
     }
 }

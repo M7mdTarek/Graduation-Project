@@ -6,6 +6,7 @@ using Test.Helper;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Extensions.DependencyInjection;
+using Test.Models.Repository;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -19,6 +20,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<SignupHandler>();
 builder.Services.AddScoped<LoginHandler>();
 builder.Services.AddScoped<ForgetPasswordHandler>();
+
+builder.Services.AddScoped<ChronicDiseaseRepo>();
+builder.Services.AddScoped<DrugRepo>();
 
 builder.Services.AddDbContext<AppDbContext>(
     builder => builder.UseSqlServer("server=.;database=MediSim;integrated security=true;trust server certificate=true")

@@ -1,16 +1,21 @@
 ﻿
 namespace Test.Models.Repository
 {
-    public class ChronicDiseaseRepo : IAppRepo<ChronicDiseaseRepo>
+    public class ChronicDiseaseRepo : IAppRepo<Chronic_disease>
     {
-        public List<ChronicDiseaseRepo> GetAll()
+        private readonly AppDbContext dbContext;
+
+        public ChronicDiseaseRepo(AppDbContext dbContext)
         {
-            
+            this.dbContext = dbContext;
         }
 
-        public ChronicDiseaseRepo GetById(int id)
+        public List<Chronic_disease> GetAll() => dbContext.Set<Chronic_disease>().ToList();
+        
+        public Chronic_disease GetOne(object id) 
         {
-            
-        }
+            return dbContext.Set<Chronic_disease>().SingleOrDefault(x => x.Id == (int) id);
+        } 
+        
     }
 }
