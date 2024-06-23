@@ -20,9 +20,15 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<SignupHandler>();
 builder.Services.AddScoped<LoginHandler>();
 builder.Services.AddScoped<ForgetPasswordHandler>();
+builder.Services.AddScoped<ValidateTokenHandler>();
+
 
 builder.Services.AddScoped<ChronicDiseaseRepo>();
 builder.Services.AddScoped<DrugRepo>();
+builder.Services.AddScoped<SymptomRepo>();
+builder.Services.AddScoped<UserDiseaseRepo>();
+builder.Services.AddScoped<PostRepo>();
+
 
 builder.Services.AddDbContext<AppDbContext>(
     builder => builder.UseSqlServer("server=.;database=MediSim;integrated security=true;trust server certificate=true")
