@@ -7,6 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 using Test.Models.Repository;
+using Test.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +16,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Register HttpClient and ExternalApiService
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<PredictDiseaseService>();
 
 
 builder.Services.AddScoped<SignupHandler>();

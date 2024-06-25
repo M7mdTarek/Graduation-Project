@@ -65,13 +65,13 @@ namespace Test.Controllers
 
             //get all posts and set isadvice true if the user has this post
             var posts = postRepo.GetAll()
-                                       .Select(p =>
-                                       {
-                                           // Check if the post's disease_id is in the list of chronicDiseases
-                                           p.isActive = chronicDiseases.Contains(p.disease_id);
-                                           return p;
-                                       })
-                                       .ToList();
+                .Select(p =>
+                {
+                    // Check if the post's disease_id is in the list of chronicDiseases
+                    p.isActive = chronicDiseases.Contains(p.disease_id);
+                    return p;
+                }).ToList();
+
             return Ok(posts);
         }
     }
