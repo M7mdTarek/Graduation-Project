@@ -20,6 +20,8 @@ builder.Services.AddSwaggerGen();
 // Register HttpClient and ExternalApiService
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<PredictDiseaseService>();
+builder.Services.AddScoped<PredictSkinDiseaseService>();
+
 
 
 builder.Services.AddScoped<SignupHandler>();
