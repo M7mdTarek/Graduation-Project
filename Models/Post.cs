@@ -19,6 +19,6 @@ namespace Test.Models
         public string image { get; set; }
 
         [NotMapped]
-        public bool isActive {  get; set; } = false;
+        public bool isAdvice {  get; set; } = false;
     }
 }

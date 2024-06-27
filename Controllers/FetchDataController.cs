@@ -68,7 +68,7 @@ namespace Test.Controllers
                 .Select(p =>
                 {
                     // Check if the post's disease_id is in the list of chronicDiseases
-                    p.isActive = chronicDiseases.Contains(p.disease_id);
+                    p.isAdvice = chronicDiseases.Contains(p.disease_id);
                     return p;
                 }).ToList();
 
