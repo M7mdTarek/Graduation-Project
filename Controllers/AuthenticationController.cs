@@ -83,10 +83,10 @@ namespace Test.Controllers
         public async Task<ActionResult> ForgetPassword(MailDto request)
         {
             // check the email is exist
-            //if (!signupHandler.isExistEmail(email))
-            //    return BadRequest("the email is not found");
+            if (!signupHandler.isExistEmail(request.mail))
+                return BadRequest("the email is not found");
 
-            // check if the otp has been sent before
+            // check if the otp has been sent before then remove it
             forgetPasswordHandler.CheckPastOtp(request.mail);
 
             string otp = forgetPasswordHandler.GenerateOTP();

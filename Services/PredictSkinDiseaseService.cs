@@ -38,6 +38,8 @@ namespace Test.Services
             var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
             var response = await httpClient.PostAsync(url, httpContent);
+
+            //handle the exception may accure if the request failed
             try
             {
                 response.EnsureSuccessStatusCode();

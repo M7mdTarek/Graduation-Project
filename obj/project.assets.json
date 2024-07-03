@@ -3127,9 +3127,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\M7md Tarek\\Desktop\\Test\\Test\\Test.csproj",
-      "projectName": "Test",
-      "projectPath": "C:\\Users\\M7md Tarek\\Desktop\\Test\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\M7md Tarek\\Desktop\\Test\\Test\\MediSim.csproj",
+      "projectName": "MediSim",
+      "projectPath": "C:\\Users\\M7md Tarek\\Desktop\\Test\\Test\\MediSim.csproj",
       "packagesPath": "C:\\Users\\M7md Tarek\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\M7md Tarek\\Desktop\\Test\\Test\\obj\\",
       "projectStyle": "PackageReference",

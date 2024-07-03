@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yh5zGSEu0524IuzUE53es0AABrJuupJISWgMMUKsAeSNLYvMgKuymNosogKcbqq/Q9mUFKqkNaLiikYERwpeXQ==",
+  "dgSpecHash": "Ry80LhRUREtbQWNOn9UPLcXDy/K4NCBXVf+ISB5mHZVlY/GB+6MR6KidPHiM3tYjO0wgqBcSA+ty0mEgGjB7JQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\M7md Tarek\\Desktop\\Test\\Test\\Test.csproj",
+  "projectFilePath": "C:\\Users\\M7md Tarek\\Desktop\\Test\\Test\\MediSim.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\M7md Tarek\\.nuget\\packages\\azure.core\\1.40.0\\azure.core.1.40.0.nupkg.sha512",
     "C:\\Users\\M7md Tarek\\.nuget\\packages\\azure.identity\\1.12.0\\azure.identity.1.12.0.nupkg.sha512",

@@ -37,8 +37,12 @@ builder.Services.AddScoped<UserDiseaseRepo>();
 builder.Services.AddScoped<PostRepo>();
 
 
+//builder.Services.AddDbContext<AppDbContext>(
+//    builder => builder.UseSqlServer("server=.;database=MediSim;integrated security=true;trust server certificate=true")
+//    );
+
 builder.Services.AddDbContext<AppDbContext>(
-    builder => builder.UseSqlServer("server=.;database=MediSim;integrated security=true;trust server certificate=true")
+    builder => builder.UseSqlServer("Server=db6097.databaseasp.net; Database=db6097; User Id=db6097; Password=9Qj-Ai+87%Tq; Encrypt=False; MultipleActiveResultSets=True;")
     );
 
 // for register options of jwt once

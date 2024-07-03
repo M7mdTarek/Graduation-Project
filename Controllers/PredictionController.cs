@@ -36,6 +36,7 @@ namespace Test.Controllers
                 symptoms.Add(0);
             }
 
+            //call the External API of the model 
             var result = await diseaseService.Predict(symptoms);
 
             if(result == null)
@@ -66,6 +67,7 @@ namespace Test.Controllers
 
             var base64 = await skinService.ConvertTo64(image);
 
+            //call the External API of the model 
             var result = await skinService.Predict(base64);
 
             if (result == null)
@@ -73,6 +75,7 @@ namespace Test.Controllers
                 return NotFound("the modelbit request failed");
             }
 
+            //to return the final result's key as dto property name
             var mappedResult = new
             {
                 enDiseaseName = result.enDiseaseName,
