@@ -288,7 +288,7 @@ The symptoms are processed and sent to an external API for disease prediction.
 
 This backend is designed to work with the corresponding frontend application. You can find the frontend GitHub repository at the following link:
 
-- [Frontend GitHub Repository](https://github.com/Mahmoudadel17/Graduation-Project)
+- [mobile application GitHub Repository](https://github.com/Mahmoudadel17/Graduation-Project)
 
 #### Mobile App Developer
 
