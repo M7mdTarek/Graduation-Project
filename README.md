@@ -284,7 +284,15 @@ The symptoms are processed and sent to an external API for disease prediction.
     - "the modelbit request failed": If the external API request fails or returns no result.
 
 
+### Frontend Project
 
+This backend is designed to work with the corresponding frontend application. You can find the frontend GitHub repository at the following link:
+
+- [Frontend GitHub Repository](https://github.com/Mahmoudadel17/Graduation-Project)
+
+#### Mobile App Developer
+
+The  mobile application were developed by: **[Mahmoud Adel](https://github.com/Mahmoudadel17)** 
 
 
 
